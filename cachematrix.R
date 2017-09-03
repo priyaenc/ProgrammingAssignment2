@@ -18,7 +18,7 @@ rm(list = ls())
 makeCacheMatrix <- function(x = matrix()) {
   inv = NULL
   set = function(y) {
-    x <<- y #Not here we have used scoping assignment. This value can be accessed outside function also
+    x <<- y #Note here we have used scoping assignment. This value can be accessed outside function also
     inv <<- NULL
   }
   get = function() x
